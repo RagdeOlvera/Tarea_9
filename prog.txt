@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main () 
+{
+int a,b,c;
+printf("\nUniversidad Nacional Autonoma de Mexico");
+printf("\nF. E. S. Aragon");
+printf("\nMateria: Computadoras y Programacion\n");
+
+printf("\nPrograma para ordenar 3 numeros de mayor a menor");
+printf("\n\nDame el 1er numero:");
+scanf("%i",&a);
+printf("\nDame el 2do numero:");
+scanf("%i",&b);
+printf("\nDame el 3er numero:");
+scanf("%i",&c);
+printf("\nEl orden de los numeros que me diste son:\n");
+	if (a>b)
+	{
+		if (b>c)
+			printf("\n%i\n%i\n%i", a,b,c);
+		else
+		{
+			if (a>c)
+				printf("\n%i\n%i\n%i", a, c, b);
+			else
+				printf("\n%i\n%i\n%i", c, a, b);
+		}
+	}
+	else 
+	{
+		if (a>c)
+			printf("\n%i\n%i\n%i", b, a, c);
+		else
+		{
+			if (b>c)
+				printf("\n%i\n%i\n%i", b, c, a);
+			else 
+				printf("\n%i\n%i\n%i", c, b, a);
+		}
+	}
+printf("\n\nFin del programa.");
+}
